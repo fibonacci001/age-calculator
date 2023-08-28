@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="dist/output.css">
+  <link rel="stylesheet" href="dist/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;700;800&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <main class=" ">
+    <div class=" bg-white p-10 mt-10 f1 main">
+
+ <div class="flex"> 
+<label for="day">
+  <p class="day_label text-sm text-Smokey_grey-100 dt">DAY</p>
+  <input type="number" name="day" placeholder="DD" class="px-3 py-3 day">
+  <p class="errormessage_day er "></p>
+</label>
+<label for="month">
+  <p class="month_label text-sm text-Smokey_grey-100 dt">MONTH</p>
+  <input type="number" name="month" placeholder="MM" class="px-3 py-3 month">
+  <p class="errormessage_month er"></p>
+</label>
+<label for="year">
+  <p class="year_label text-sm text-Smokey_grey-100 dt">YEAR</p>
+  <input type="number" name="year" placeholder="YYYY" class="px-3 py-3 year">
+  <p class="errormessage_year er"></p>
+</label>
+</div>
+<br>
+<div class="b_div">
+  <hr class="w-4/5 mr-6 mb-6 lineer bg-Off_black-100">
+  <button class="btnn">
+<img src="/assets/images/icon-arrow.svg" alt="" class="rounded-full p-3 bg-my_Purple-100">
+  </button>
+</div>
+<div>
+<p class="ma font-Poppins lg:text-7xl md:text-6xl sm:text-6xl xs:text-4xl italic first"><span class="text-my_Purple-100 y_result">--</span> years</p>
+  
+  <p class="ma font-Poppins lg:text-7xl md:text-6xl sm:text-5xl xs:text-4xl italic"><span class="text-my_Purple-100 m_result">--</span> months</p>
+  
+  <p class="ma font-Poppins lg:text-7xl md:text-6xl sm:text-6xl xs:text-4xl italic"><span class="text-my_Purple-100 d_result">--</span> days</p>
+  
+  </div>
+ </div> 
+ </main> 
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://giftrichard.com/">Gift Richard</a>.
+  </div>
+  <script src="index.js" ></script>
+</body>
+</html>
