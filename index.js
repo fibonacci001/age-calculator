@@ -63,14 +63,13 @@ if (error[0].textContent === '' && error[1].textContent === ''&& error[2].textCo
     const date = new Date(y_value, m_value - 1, d_value)
 
     const diff = today.getTime() - date.getTime(); 
-    // add this condition to check if diff is positive or not
+    
     if (diff < 0) {
-        // display an error message if diff is negative
+    
         error[3].textContent = "Date must be in the past";
     }
     else {
-        // proceed with the calculation if diff is positive
-        // divide by appropriate factors to get years, months, and days
+        
         const years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365)); 
         const months = Math.floor((diff % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24 * 30.436875));
         const days = Math.floor((diff % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24));
